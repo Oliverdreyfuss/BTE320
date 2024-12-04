@@ -1,0 +1,575 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMUws4s8ghNNa+bDjHHFDR6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Oliverdreyfuss/BTE320/blob/main/Oliver-BTE320_Assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Class_Student:\n",
+        "\n",
+        "    def__init__(self, name, number):\n",
+        "      self.__name = name\n",
+        "      self.number = number\n",
+        "      self.courses = []\n",
+        "\n",
+        "    def enrol(self,newCourse)\n",
+        "      if newCourse not in self.courses:\n",
+        "        self.courses.append(newCourse)\n",
+        "      else:\n",
+        "        print(f'You have already enrolled in {newCourse}')\n",
+        "\n",
+        "    def get_courses(self):\n",
+        "      return self.courses"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 108
+        },
+        "id": "BjSNbjHbtLpx",
+        "outputId": "783b1938-4817-45db-c0b8-1c72cc826d78"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (<ipython-input-5-0aae227e2899>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-5-0aae227e2899>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    Class_Student:\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "student class problem ^"
+      ],
+      "metadata": {
+        "id": "d-FsZ-MdqBZU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s.enroll('abc123')"
+      ],
+      "metadata": {
+        "id": "C_F2HMSfxqP5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "months = {}\n",
+        "\n",
+        "names = [\"Jan\", \"Feb\",\"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\",\"Sep\", \"Oct\", \"Nov\",\"Dec\"]\n",
+        "\n",
+        "numbers = [1,2,3,4,5,6,7,8,9,10,11,12]\n",
+        "\n",
+        "\n",
+        "for idx in range(len(numbers)):\n",
+        "\n",
+        "  months[numbers[idx]] = names[idx]\n",
+        "\n",
+        "months"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7xBZjwC1l-dH",
+        "outputId": "007c1e42-1fe9-4405-8907-3a5208e49d00"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1: 'Jan',\n",
+              " 2: 'Feb',\n",
+              " 3: 'Mar',\n",
+              " 4: 'Apr',\n",
+              " 5: 'May',\n",
+              " 6: 'Jun',\n",
+              " 7: 'Jul',\n",
+              " 8: 'Aug',\n",
+              " 9: 'Sep',\n",
+              " 10: 'Oct',\n",
+              " 11: 'Nov',\n",
+              " 12: 'Dec'}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Months2dictionary^"
+      ],
+      "metadata": {
+        "id": "-vGIy6LFl_sb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = float(input('Enter first number: '))\n",
+        "\n",
+        "n2 = float(input('Enter second number: '))\n",
+        "\n",
+        "symbol = input('Operation (+, -, *, /, **): ')\n",
+        "\n",
+        "\n",
+        "\n",
+        "if symbol == '+':\n",
+        "\n",
+        "  print(n1 + n2)\n",
+        "\n",
+        "elif symbol == '-':\n",
+        "\n",
+        "  print(n1 - n2)\n",
+        "\n",
+        "elif symbol == '*':\n",
+        "\n",
+        "  print(n1 * n2)\n",
+        "\n",
+        "elif symbol == '/':\n",
+        "\n",
+        "  print(n1 / n2)\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "  print(n1 ** n2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OAH9O5r4kk8C",
+        "outputId": "00c4bf5c-9bfa-4633-8294-6818b69bdd6c"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 3\n",
+            "Enter second number: 5\n",
+            "Operation (+, -, *, /, **): +\n",
+            "8.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Number Calculator problem ^"
+      ],
+      "metadata": {
+        "id": "9aVAQ80pMOK-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Play = input('New game?')\n",
+        "\n",
+        "while Play == 'yes':\n",
+        "  P1 = input('enter gesture(Rock, Paper, Scisscors)')\n",
+        "  P2 = input('enter gesture(Rock, Paper, Scisscors)')\n",
+        "\n",
+        "  if P1 == 'Rock' and P2 == 'Scisscors':\n",
+        "    print('player 1 wins')\n",
+        "\n",
+        "  elif P1 == 'Scisscors' and P2 == 'Rock':\n",
+        "    print('player 2 wins')\n",
+        "\n",
+        "  elif P1 == 'Rock' and P2 == 'Paper':\n",
+        "    print('player 2 wins')\n",
+        "\n",
+        "  elif P1 == 'Paper' and P2 == 'Rock':\n",
+        "    print('player 1 wins')\n",
+        "\n",
+        "  elif P1 == 'Paper' and P2 == 'Scisscors':\n",
+        "    print('player 2 wins')\n",
+        "\n",
+        "  elif P1 == 'Scisscors' and P2 == 'Paper':\n",
+        "    print('player 2 wins')\n",
+        "  else:\n",
+        "    print('draw')\n",
+        "  Play == input('New game?')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2dkcyrOcu1QO",
+        "outputId": "00fc21ab-632f-42c0-94f6-8bee9582ce12"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "New game?yes\n",
+            "enter gesture(Rock, Paper, Scisscors)Rovk\n",
+            "enter gesture(Rock, Paper, Scisscors)Paper\n",
+            "draw\n",
+            "New game?Rock\n",
+            "enter gesture(Rock, Paper, Scisscors)Paper\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Rock Paper scissors^"
+      ],
+      "metadata": {
+        "id": "4-UnJPrIvTrf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "flatRate = 5\n",
+        "HourlyRate = 2.5\n",
+        "\n",
+        "for H in range(1,9,1):\n",
+        "  Charge = flatRate + HourlyRate * H\n",
+        "  if Charge < 10:\n",
+        "    Charge = 10\n",
+        "  elif Charge >20:\n",
+        "    Charge = 20\n",
+        "  print(H, Charge)"
+      ],
+      "metadata": {
+        "id": "v2rkH_6DujAg",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "939a19be-47e0-432e-96af-8f56a8599b40"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 10\n",
+            "2 10.0\n",
+            "3 12.5\n",
+            "4 15.0\n",
+            "5 17.5\n",
+            "6 20.0\n",
+            "7 20\n",
+            "8 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Parking problem^ (mabye?)"
+      ],
+      "metadata": {
+        "id": "vNhic_oeumha"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "TicketPrice= 10\n",
+        "FixedCost= 200\n",
+        "FixedTickets= 20\n",
+        "\n",
+        "for AdvertisingDollars in range(0,201,25):\n",
+        "  ExtraTickets = round(2* (AdvertisingDollars)**.5,)\n",
+        "  profit = (FixedTickets + ExtraTickets) * (TicketPrice) - AdvertisingDollars - FixedCost\n",
+        "  print(AdvertisingDollars, profit)"
+      ],
+      "metadata": {
+        "id": "N3bVE7ECtu6s",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4564bdda-8fbe-4208-aae8-85f5c52dc0f9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 0\n",
+            "25 75\n",
+            "50 90\n",
+            "75 95\n",
+            "100 100\n",
+            "125 95\n",
+            "150 90\n",
+            "175 85\n",
+            "200 80\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Movie advertising ^"
+      ],
+      "metadata": {
+        "id": "8khOgrBZtwtZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pi= 3.14\n",
+        "r=5\n",
+        "c=10\n",
+        "h=8\n",
+        "\n",
+        "shape= 'square'\n",
+        "\n",
+        "if shape == 'circle':\n",
+        "  Area = pi* (r ** 2)\n",
+        "  print(Area)\n",
+        "\n",
+        "elif shape == 'square':\n",
+        "  Area = c ** 2\n",
+        "  print(Area)\n",
+        "\n",
+        "elif shape == 'triangle':\n",
+        "  Area = c * h * .5\n",
+        "  print(Area)\n",
+        "else: print('N/A')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5mRkH2SbtUkB",
+        "outputId": "dcafa4c2-634c-414d-e594-51cda693b80a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Shape problem^"
+      ],
+      "metadata": {
+        "id": "QUojwCSNtXu2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "D0V8PLE3Lu2F",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "090e7bff-20aa-46eb-e3f9-9cf15be4b125"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter NUmber of Credit Hours15\n",
+            "Fee: 20000$\n"
+          ]
+        }
+      ],
+      "source": [
+        "def calculate_tuition(credits):\n",
+        "    if credits >= 12:\n",
+        "       return 20000\n",
+        "    else:\n",
+        "        return 1200 + (1700 * credits)\n",
+        "\n",
+        "credits = int(input('enter NUmber of Credit Hours'))\n",
+        "print (f'Fee: {calculate_tuition(credits)}$')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tuition Credit problem (ll/4)^"
+      ],
+      "metadata": {
+        "id": "m2pAUFJ8MB43"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def res(s):\n",
+        "  if len(s) == 1:\n",
+        "    return s\n",
+        "  else:\n",
+        "    return s[::-1]\n",
+        "res('Hello')"
+      ],
+      "metadata": {
+        "id": "sZsNu8lZMBOp",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "941f77b3-d6f3-4968-d0e0-dbe4ebeaa548"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'olleH'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "return hello backward ^"
+      ],
+      "metadata": {
+        "id": "l-iYH8oaMUKY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Annual_salary = float(input('Enter Salary:'))\n",
+        "total_cost = float(input('Enter Dream Home Cost:'))\n",
+        "portion_saved = float(input('Enter Percentage:'))\n",
+        "\n",
+        "portion_down_payment = .25\n",
+        "r= .04\n",
+        "current_savings= 0\n",
+        "monthly_salary= Annual_salary/12\n",
+        "months= 0\n",
+        "\n",
+        "while (current_savings <= portion_down_payment * total_cost):\n",
+        "    months+= 1\n",
+        "    current_savings += (current_savings * r / 12) + (portion_saved * monthly_salary)\n",
+        "print(months)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HZGR-OsCMfbn",
+        "outputId": "ec36e9ea-8a07-4f28-c4a0-329e6b75c043"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Salary:20\n",
+            "Enter Dream Home Cost:50\n",
+            "Enter Percentage:10\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dream home calcualtion^"
+      ],
+      "metadata": {
+        "id": "pQfG47p0MfOo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "flatRate = 5\n",
+        "HourlyRate = 2.5\n",
+        "\n",
+        "for H in range(1,9,1):\n",
+        "  Charge = flatRate + HourlyRate * H\n",
+        "  if Charge < 10:\n",
+        "    Charge = 10\n",
+        "  elif Charge >20:\n",
+        "    Charge = 20\n",
+        "  print(H, Charge)"
+      ],
+      "metadata": {
+        "id": "b2CQu1Hysvc0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Parking garage problem ^"
+      ],
+      "metadata": {
+        "id": "DAE_CpLPsvvM"
+      }
+    }
+  ]
+}
